@@ -1,0 +1,78 @@
+$ColorDark: #252323;
+$ColorLigth: #F0F3FA;
+$ColorRed: #E63746;
+$ColorGoldty: #F2CC8F;
+
+@media only screen and (min-width: 650px) {
+
+    .displayHome{
+        background-color: $ColorLigth;
+        position: absolute;
+        margin-top: 75px;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+    
+        .MyPersonContent{
+    
+            h1{
+                color: $ColorLigth;
+                font-size: 7vmin;
+            }
+            
+            .MiImagenPerfil{
+                border-radius: 50%;
+                width: 65vmin;
+                height: 65vmin;
+                background-position: -5vmin -14.5vmin;
+                background-size: 78vmin;
+            }
+            
+            .TextBox{
+                display: flex;
+                padding: 4em 0;
+                flex-direction: column;
+                align-items: center;
+                gap: 2em;
+    
+                h1{
+                    color: $ColorDark;
+                    font-size: 5vmin;
+                }
+    
+                p{
+                    width: calc(100% - 4em);
+                    text-align: justify;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 2vw;
+                }
+                
+            }
+    
+        }
+    
+        
+        .Footer{
+            width: 100%;
+            height: 250px;
+            background-color: $ColorDark;
+            color: $ColorLigth;
+        }
+    }
+
+}
+
+
+.DarkPlace{
+    background-color: $ColorDark;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 3em 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
